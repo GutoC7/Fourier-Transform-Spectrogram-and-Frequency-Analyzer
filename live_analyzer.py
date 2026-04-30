@@ -38,7 +38,7 @@ ax1.set_title("(A) Amplitude over time (Oscilloscope)")
 ax1.set_xlabel("Time (Seconds)")
 ax1.set_ylabel("Amplitude")
 ax1.set_xlim(0, WINDOW_SIZE / SAMPLE_RATE)
-ax1.set_ylim(-0.5, 0.5) # adjust these limits if your audio is too molested 
+ax1.set_ylim(-0.5, 0.5) # adjust these limits if your audio is too quiet or too loud 
 ax1.grid(True, alpha=0.3)
 
 # graph B 
@@ -49,7 +49,7 @@ ax2.set_title("(B) Magnitude over frequency (Spectrum Analyzer)")
 ax2.set_xlabel("Frequency (Hz)")
 ax2.set_ylabel("Magnitude")
 ax2.set_xlim(0, 1500)   # focus on the guitar frequency range
-ax2.set_ylim(0, 0.05)   # adjust this if the peaks shoot off the top of your ass
+ax2.set_ylim(0, 0.05)   # adjust this if the peaks shoot off the top of the graph
 ax2.grid(True, alpha=0.3)
 
 plt.tight_layout()
