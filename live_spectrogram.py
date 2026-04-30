@@ -81,7 +81,7 @@ print(sd.query_devices())
 print("\nStarting live audio stream... Play your guitar!")
 try:
     # Open the audio stream
-    stream = sd.InputStream(samplerate=SAMPLE_RATE, channels=1, # se der merda procura o id da interface e coloca aqui: device=ID
+    stream = sd.InputStream(samplerate=SAMPLE_RATE, channels=1, # change the input if the wrong device is selected automatically: device=ID
                             blocksize=HOP_SIZE, callback=audio_callback)
     with stream:
         # Start the GUI loop
